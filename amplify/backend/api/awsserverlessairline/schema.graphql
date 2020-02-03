@@ -1,3 +1,6 @@
+directive @deprecated(
+  reason: String = "No longer supported"
+) on FIELD_DEFINITION | ENUM_VALUE
 
 # Flight uses API authorization level
 # and fine-grained auth to only allow authenticated users to read flights
